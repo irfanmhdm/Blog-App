@@ -10,6 +10,7 @@ import CreatePost from './components/CreatePost'
 import ViewMyPost from './components/ViewMyPost'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
+import ViewAll from './components/ViewAll'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/signin' element={<Signin />} />
       <Route path='/signup' element={<Signup />} />
-      
+      <Route path='/viewall' element={<ViewAll />} />
      </Routes>
      </BrowserRouter>
     </>

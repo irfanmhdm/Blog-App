@@ -26,7 +26,7 @@ const Navbar = () => {
 
                 <Link
                     className="navbar-brand text-white fw-bold fs-3"
-                    to="/home"
+                    to="/"
                 >
                      BlogApp
                 </Link>
@@ -65,25 +65,29 @@ const Navbar = () => {
                             </Link>
                         </li>
 
-                        <li className="nav-item mx-2">
-                            <Link
-                                className="nav-link text-white fw-semibold"
-                                to="/viewmypost"
-                            >
-                                 My Posts
-                            </Link>
-                        </li>
+                            <li className="nav-item mx-2">
+                                <Link
+                                    className="nav-link text-white fw-semibold"
+                                    to="/viewmypost"
+                                >
+                                    My Posts
+                                </Link>
+                            </li>
+
+                            <li className="nav-item mx-2">
+                                <Link
+                                    className="nav-link text-white fw-semibold"
+                                    to="/viewall"
+                                >
+                                    All Posts
+                                </Link>
+                            </li>
+
+
 
                     </ul>
 
-                    <button
-                        className="btn btn-danger rounded-pill px-4 fw-bold"
-                        onClick={logout}
-
-                        
-                    >
-                        Logout
-                    </button>
+                    
 
                 </div>
 

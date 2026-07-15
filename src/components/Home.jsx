@@ -107,17 +107,32 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-dark text-white text-center py-4 mt-5">
-        <h4 className="mb-2">BlogApp</h4>
+      <footer className="bg-dark text-white py-4 mt-auto">
+  <div className="container">
 
-        <p className="mb-1 text-light">
-          Built using React, Node.js, Express & MongoDB
+    <div className="row align-items-center">
+
+      <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <h4 className="fw-bold mb-1">BlogApp</h4>
+        <p className="text-light mb-0">
+          Share your thoughts. Connect with the world.
         </p>
+      </div>
 
+      <div className="col-md-6 text-center text-md-end">
+        <p className="mb-1">
+          Built with <strong>React</strong>, <strong>Node.js</strong>,
+          <strong> Express</strong> & <strong>MongoDB</strong>
+        </p>
         <small className="text-secondary">
           © 2026 BlogApp. All Rights Reserved.
         </small>
-      </footer>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
     </div>
   );
 };

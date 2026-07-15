@@ -7,7 +7,8 @@ const Signup = () => {
         name: "",
         phone: "",
         email: "",
-        password: ""
+        password: "",
+        cnfPass: ""
     });
 
     const inputHandler = (event) => {
@@ -29,7 +30,7 @@ const Signup = () => {
         }
     
 
-        axios.get("http://localhost:3001/signup", input)
+        axios.post("http://localhost:3001/signup", input)
             .then((response) => {
 
                 console.log(response.data);
