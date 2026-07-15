@@ -29,7 +29,7 @@ const Signup = () => {
         }
     
 
-        axios.post("http://localhost:3001/signup", input)
+        axios.get("http://localhost:3001/signup", input)
             .then((response) => {
 
                 console.log(response.data);
